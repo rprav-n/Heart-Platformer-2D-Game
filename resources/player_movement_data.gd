@@ -7,5 +7,5 @@ extends Resource
 @export var acceleration: int = 800
 @export var friction: int = 1000
 @export var air_resistance: int = 200
-
+@export var air_acceleration: int = 400
 var gravity: int = ProjectSettings.get_setting("physics/2d/default_gravity")

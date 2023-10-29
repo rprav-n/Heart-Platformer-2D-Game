@@ -1,7 +1,9 @@
-Timer
+StaticBody2D
+ColorRect
 CollisionShape2D
+Camera2D
+Timer
 AnimatedSprite2D
 CharacterBody2D
 Polygon2D
 CollisionPolygon2D
-StaticBody2D
