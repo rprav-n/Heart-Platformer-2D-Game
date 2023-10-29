@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://uwlloacyy10g"]
+
+[ext_resource type="Texture2D" uid="uid://b5tu1hr02amdm" path="res://assets/hazards/spikes.png" id="1_y6ps0"]
+[ext_resource type="PackedScene" uid="uid://bvj7hm2ffo166" path="res://scenes/hazard/hazard_area.tscn" id="2_8ewev"]
+
+[node name="Spikes" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_y6ps0")
+offset = Vector2(0, -8)
+
+[node name="HazardArea" parent="." instance=ExtResource("2_8ewev")]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HazardArea"]
+polygon = PackedVector2Array(-8, 0, -5, -6, -4, -6, -1, 0)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="HazardArea"]
+position = Vector2(8, 0)
+polygon = PackedVector2Array(-8, 0, -5, -6, -4, -6, -1, 0)

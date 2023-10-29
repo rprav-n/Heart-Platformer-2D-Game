@@ -6,6 +6,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var coyote_jump_timer: Timer = $CoyoteJumpTimer
+@onready var starting_postion: Vector2 = self.global_position
 
 var air_jump: bool = false
 
@@ -48,7 +49,7 @@ func handle_jump():
 	if is_on_floor() or coyote_jump_timer.time_left > 0.0:
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = movement_data.jump_speed
-	if not is_on_floor():
+	elif not is_on_floor():
 		if Input.is_action_just_released("jump") and velocity.y < movement_data.jump_speed / 2.0:
 			velocity.y = movement_data.jump_speed / 2.0
 		
@@ -88,3 +89,7 @@ func update_animation(input_axis: float):
 	
 	if not is_on_floor():
 		animated_sprite_2d.play("jump")
+
+
+func _on_hazard_detector_area_entered(_area: Area2D):
+	global_position = starting_postion
