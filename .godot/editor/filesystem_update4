@@ -5,3 +5,6 @@ res://resources/player_movement_data.gd
 res://resources/default_movement_data.tres
 res://scenes/spike/spikes.tscn
 res://scenes/hazard/hazard_area.tscn
+res://scenes/collectible/heart.tscn
+res://scenes/collectible/heart.gd
+res://scenes/world/world.gd
