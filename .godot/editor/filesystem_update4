@@ -7,3 +7,4 @@ res://scenes/collectible/heart.tscn
 res://events/Events.gd
 res://scenes/collectible/heart.gd
 res://scenes/world/world.gd
+res://tile/tile_map.tscn
