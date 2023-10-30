@@ -1,15 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://5q6ul07f1rdf"]
+[gd_scene load_steps=7 format=3 uid="uid://5q6ul07f1rdf"]
 
 [ext_resource type="Script" path="res://scenes/world/world.gd" id="1_aab02"]
 [ext_resource type="PackedScene" uid="uid://cwnhg5ctft20b" path="res://scenes/player/player.tscn" id="2_uc31h"]
 [ext_resource type="PackedScene" uid="uid://uwlloacyy10g" path="res://scenes/spike/spikes.tscn" id="3_3h3yg"]
 [ext_resource type="PackedScene" uid="uid://b0sf75qouu0eu" path="res://scenes/collectible/heart.tscn" id="4_bnb7s"]
+[ext_resource type="PackedScene" uid="uid://bak3hwr8uk1df" path="res://ui/level_completed.tscn" id="5_vu5uh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uol21"]
 size = Vector2(20, 74)
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_aab02")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LevelCompleted" parent="CanvasLayer" instance=ExtResource("5_vu5uh")]
+visible = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_mask = 0
