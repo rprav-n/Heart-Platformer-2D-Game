@@ -1,3 +1,5 @@
+res://scenes/world/Levels
+res://scenes/world
 res://tile
 res://events
 res://ui
@@ -7,4 +9,3 @@ res://scenes/spike
 res://resources
 res://assets/player
 res://scenes/player
-res://scenes/world

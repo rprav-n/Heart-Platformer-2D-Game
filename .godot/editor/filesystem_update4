@@ -1,10 +1,9 @@
-res://ui/level_completed.tscn
 res://scenes/world/world.tscn
-res://scenes/player/player.tscn
-res://scenes/spike/spikes.tscn
-res://scenes/hazard/hazard_area.tscn
-res://scenes/collectible/heart.tscn
-res://events/Events.gd
-res://scenes/collectible/heart.gd
-res://scenes/world/world.gd
 res://tile/tile_map.tscn
+res://scenes/world/world_copy.tscn
+res://scenes/world/Levels/level_one.tscn
+res://scenes/world/Levels/level_two.tscn
+res://scenes/world/world.gd
+res://scenes/world/Levels/level_transition.tscn
+res://scenes/world/Levels/level_transition.gd
+res://scenes/player/player.tscn

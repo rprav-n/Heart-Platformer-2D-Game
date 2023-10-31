@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://swekpe68q4bf"]
+
+[ext_resource type="PackedScene" uid="uid://5q6ul07f1rdf" path="res://scenes/world/world.tscn" id="1_j3kjj"]
+[ext_resource type="PackedScene" uid="uid://uwlloacyy10g" path="res://scenes/spike/spikes.tscn" id="2_6sm8r"]
+[ext_resource type="PackedScene" uid="uid://dwyxsmhftqqi5" path="res://scenes/world/Levels/level_two.tscn" id="2_qh0u8"]
+[ext_resource type="PackedScene" uid="uid://b0sf75qouu0eu" path="res://scenes/collectible/heart.tscn" id="3_nb3s2"]
+
+[node name="LevelOne" instance=ExtResource("1_j3kjj")]
+next_level = ExtResource("2_qh0u8")
+
+[node name="TileMap" parent="." index="1"]
+layer_0/tile_data = PackedInt32Array(0, 131072, 0, 65535, 0, 0, 131071, 0, 1, 196607, 0, 1, 262143, 0, 1, 327679, 0, 1, 393215, 0, 1, 458751, 0, 1, 524287, 0, 1, 589823, 0, 1, 655359, 0, 1, 720895, 0, 2, 655360, 65536, 2, 589824, 65536, 1, 524288, 65536, 1, 458752, 65536, 1, 393216, 65536, 1, 327680, 327680, 2, 262144, 131072, 1, 196608, 131072, 1, 131072, 131072, 1, 65536, 131072, 1, 589825, 65536, 1, 589826, 65536, 1, 589827, 65536, 1, 589828, 65536, 1, 589829, 65536, 1, 589830, 65536, 1, 589831, 327680, 2, 589832, 65536, 0, 589833, 65536, 0, 589834, 65536, 0, 589835, 65536, 0, 589836, 65536, 0, 589837, 65536, 0, 589838, 65536, 0, 589839, 65536, 0, 589840, 65536, 0, 589841, 65536, 0, 589842, 65536, 0, 589843, 65536, 0, 589844, 65536, 0, 589845, 65536, 0, 589846, 393216, 2, 589847, 131072, 1, 655383, 131072, 2, 655382, 65536, 2, 655381, 65536, 2, 655380, 65536, 2, 655379, 65536, 2, 655378, 65536, 2, 655377, 65536, 2, 655376, 65536, 2, 655375, 65536, 2, 655374, 65536, 2, 655373, 65536, 2, 655372, 65536, 2, 655371, 65536, 2, 655370, 65536, 2, 655369, 65536, 2, 655368, 65536, 2, 655367, 65536, 2, 655366, 65536, 2, 655365, 65536, 2, 655364, 65536, 2, 655363, 65536, 2, 655362, 65536, 2, 655361, 65536, 2, 524310, 0, 1, 458774, 0, 1, 393238, 0, 1, 327702, 0, 1, 262166, 0, 1, 196630, 0, 1, 131094, 0, 1, 65558, 0, 1, -131050, 0, 0, -65514, 0, 1, 22, 0, 1, -131049, 131072, 0, -65513, 131072, 1, 23, 131072, 1, 65559, 131072, 1, 131095, 131072, 1, 196631, 131072, 1, 262167, 131072, 1, 327703, 131072, 1, 524311, 131072, 1, 458775, 131072, 1, 393239, 131072, 1, 327681, 65536, 0, 327682, 65536, 0, 327683, 131072, 0, 393219, 131072, 1, 458755, 131072, 1, 524291, 327680, 2, 524290, 65536, 1, 524289, 65536, 1, 458753, 65536, 1, 393217, 65536, 1, 393218, 65536, 1, 458754, 65536, 1, 524294, 393216, 2, 458758, 0, 1, 327686, 0, 0, 393222, 0, 1, 327687, 131072, 0, 524292, 65536, 0, 524293, 65536, 0, 393223, 131072, 1, 458759, 131072, 1, 524295, 131072, 1, 327691, 0, 3, 327692, 65536, 3, 327693, 65536, 3, 327694, 131072, 3, 458769, 0, 3, 458770, 65536, 3, 458771, 131072, 3, -131054, 0, 0, 196626, 0, 2, 196627, 131072, 2, 131091, 131072, 1, 65555, 131072, 1, 19, 131072, 1, -65517, 131072, 1, -131053, 131072, 0, -65518, 0, 1, 18, 0, 1, 65554, 0, 1, 131090, 0, 1)
+
+[node name="Spikes" parent="." index="3" instance=ExtResource("2_6sm8r")]
+position = Vector2(72, 128)
+
+[node name="Spikes2" parent="." index="4" instance=ExtResource("2_6sm8r")]
+position = Vector2(88, 128)
+
+[node name="Spikes3" parent="." index="5" instance=ExtResource("2_6sm8r")]
+position = Vector2(136, 144)
+
+[node name="Spikes4" parent="." index="6" instance=ExtResource("2_6sm8r")]
+position = Vector2(152, 144)
+
+[node name="Spikes5" parent="." index="7" instance=ExtResource("2_6sm8r")]
+position = Vector2(168, 144)
+
+[node name="Spikes6" parent="." index="8" instance=ExtResource("2_6sm8r")]
+position = Vector2(184, 144)
+
+[node name="Spikes7" parent="." index="9" instance=ExtResource("2_6sm8r")]
+position = Vector2(200, 144)
+
+[node name="Spikes8" parent="." index="10" instance=ExtResource("2_6sm8r")]
+position = Vector2(216, 144)
+
+[node name="Spikes9" parent="." index="11" instance=ExtResource("2_6sm8r")]
+position = Vector2(232, 144)
+
+[node name="Spikes10" parent="." index="12" instance=ExtResource("2_6sm8r")]
+position = Vector2(248, 144)
+
+[node name="Spikes11" parent="." index="13" instance=ExtResource("2_6sm8r")]
+position = Vector2(264, 144)
+
+[node name="Spikes12" parent="." index="14" instance=ExtResource("2_6sm8r")]
+position = Vector2(280, 144)
+
+[node name="Spikes13" parent="." index="15" instance=ExtResource("2_6sm8r")]
+position = Vector2(296, 144)
+
+[node name="Spikes14" parent="." index="16" instance=ExtResource("2_6sm8r")]
+position = Vector2(312, 144)
+
+[node name="Spikes15" parent="." index="17" instance=ExtResource("2_6sm8r")]
+position = Vector2(328, 144)
+
+[node name="Spikes16" parent="." index="18" instance=ExtResource("2_6sm8r")]
+position = Vector2(344, 144)
+
+[node name="Heart" parent="." index="19" instance=ExtResource("3_nb3s2")]
+position = Vector2(112, 75)
+
+[node name="Heart2" parent="." index="20" instance=ExtResource("3_nb3s2")]
+position = Vector2(75, 83)
+
+[node name="Heart3" parent="." index="21" instance=ExtResource("3_nb3s2")]
+position = Vector2(207, 75)
+
+[node name="Heart4" parent="." index="22" instance=ExtResource("3_nb3s2")]
+position = Vector2(294, 106)
