@@ -7,3 +7,5 @@ res://scenes/world/world.gd
 res://scenes/world/Levels/level_transition.tscn
 res://scenes/world/Levels/level_transition.gd
 res://scenes/player/player.tscn
+res://ui/menu/start_menu.tscn
+res://ui/menu/start_menu.gd
