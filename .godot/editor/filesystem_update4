@@ -1,11 +1,8 @@
-res://scenes/world/world.tscn
-res://tile/tile_map.tscn
-res://scenes/world/world_copy.tscn
-res://scenes/world/Levels/level_one.tscn
-res://scenes/world/Levels/level_two.tscn
-res://scenes/world/world.gd
-res://scenes/world/Levels/level_transition.tscn
-res://scenes/world/Levels/level_transition.gd
-res://scenes/player/player.tscn
 res://ui/menu/start_menu.tscn
+res://scenes/world/world.tscn
+res://scenes/world/Levels/level_transition.tscn
+res://resources/theme/default_theme.tres
 res://ui/menu/start_menu.gd
+res://scenes/world/world.gd
+res://resources/theme/black_9slice.tres
+res://ui/level_completed.tscn

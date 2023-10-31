@@ -5,6 +5,7 @@ extends CenterContainer
 
 
 func _ready():
+	RenderingServer.set_default_clear_color(Color.BLACK)
 	start_button.grab_focus()
 
 func _on_start_button_pressed():
