@@ -1,8 +1,8 @@
+Label
 Button
-HBoxContainer
 VBoxContainer
 CenterContainer
-Label
+HBoxContainer
 ColorRect
 AnimationPlayer
 Timer

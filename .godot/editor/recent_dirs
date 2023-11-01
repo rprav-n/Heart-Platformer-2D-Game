@@ -1,3 +1,4 @@
+res://ui
 res://resources/theme
 res://assets/fonts
 res://ui/menu
@@ -5,7 +6,6 @@ res://scenes/world/Levels
 res://scenes/world
 res://tile
 res://events
-res://ui
 res://scenes/collectible
 res://scenes/hazard
 res://scenes/spike
