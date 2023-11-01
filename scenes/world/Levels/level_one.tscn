@@ -70,3 +70,9 @@ position = Vector2(207, 75)
 
 [node name="Heart4" parent="." index="22" instance=ExtResource("3_nb3s2")]
 position = Vector2(294, 106)
+
+[node name="Heart5" parent="." index="23" instance=ExtResource("3_nb3s2")]
+position = Vector2(368, -37)
+
+[node name="Player" parent="." index="24"]
+position = Vector2(36, 80)

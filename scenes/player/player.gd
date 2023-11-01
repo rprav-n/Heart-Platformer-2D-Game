@@ -20,12 +20,14 @@ func _process(delta: float):
 	handle_air_accleration(input_axis, delta)
 	apply_friction(input_axis, delta)
 	apply_air_resistance(input_axis, delta)
-	update_animation(input_axis)
+
 	var was_on_floor: bool = is_on_floor()
 	move_and_slide()
 	var just_left_ledge: bool = was_on_floor and not is_on_floor() and velocity.y >= 0
 	if just_left_ledge:
 		coyote_jump_timer.start()
+	
+	update_animation(input_axis)
 
 
 func apply_gravity(delta: float):
