@@ -5,3 +5,4 @@ res://scenes/world/Levels/level_one.tscn
 res://scenes/world/world.gd
 res://scenes/player/player.gd
 res://scenes/world/Levels/level_two.tscn
+res://ui/level_completed.gd

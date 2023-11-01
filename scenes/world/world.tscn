@@ -76,6 +76,18 @@ layout_mode = 2
 text = "Starts in: 3
 "
 
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 4.0
+offset_bottom = 13.0
+grow_horizontal = 2
+
+[node name="LevelTimeLabel" type="Label" parent="CanvasLayer/CenterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+
 [node name="TileMap" parent="." instance=ExtResource("3_4p42c")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -88,3 +100,6 @@ libraries = {
 [node name="Player" parent="." instance=ExtResource("2_uc31h")]
 floor_constant_speed = true
 floor_snap_length = 5.0
+
+[connection signal="next_level" from="CanvasLayer/LevelCompleted" to="." method="_on_level_completed_next_level"]
+[connection signal="retry" from="CanvasLayer/LevelCompleted" to="." method="_on_level_completed_retry"]

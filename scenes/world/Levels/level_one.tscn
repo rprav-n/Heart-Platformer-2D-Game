@@ -75,4 +75,4 @@ position = Vector2(294, 106)
 position = Vector2(368, -37)
 
 [node name="Player" parent="." index="24"]
-position = Vector2(36, 80)
+position = Vector2(43, 80)
